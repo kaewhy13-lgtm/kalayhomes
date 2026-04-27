@@ -19,7 +19,7 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-section-gap">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
           <ScrollReveal variant="slide-left" duration={0.9} className="md:col-span-8 bg-[#F3E8D9] rounded-xl p-12 flex flex-col justify-end relative overflow-hidden group">
-            <img className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" alt="artisanal ceramic" src="https://image.pollinations.ai/prompt/artisanal%20ceramic%20pottery%20studio%20aesthetic%20natural%20lighting%20minimalist?width=1200&height=800&nologo=true&model=flux" />
+            <img className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" alt="artisanal ceramic" src="/images/ceramic.png" />
             <div className="relative z-10">
               <h2 className="font-headline-md text-headline-md mb-4 text-stone-900"><TextReveal text="The Artisanal Soul" delay={0.2} /></h2>
               <ScrollReveal variant="fade-up" delay={0.5}>
@@ -75,7 +75,7 @@ export default function Home() {
       </section>
 
       {/* Parallax Quote */}
-      <ParallaxSection src="https://image.pollinations.ai/prompt/serene%20minimalist%20wabi%20sabi%20living%20room%20warm%20sunlight%20shadows?width=2000&height=1000&nologo=true&model=flux" alt="serene room" height="400px" speed={0.3} className="relative">
+      <ParallaxSection src="/images/bedroom.png" alt="serene room" height="400px" speed={0.3} className="relative">
         <div className="absolute inset-0 bg-stone-900/30 z-0" />
         <div className="relative z-10 text-center px-4 md:px-8">
           <ScrollReveal variant="blur-in" duration={1}>
@@ -92,7 +92,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-8">
           <ScrollReveal variant="slide-left" duration={0.8} className="flex-1">
             <Link to="/collection" className="group cursor-pointer relative overflow-hidden rounded-xl h-[500px] block">
-              <ParallaxImage src="https://image.pollinations.ai/prompt/beautiful%20minimalist%20scandinavian%20bedroom%20linen%20sheets%20warm%20lighting?width=1000&height=1200&nologo=true&model=flux" alt="Bedroom" className="absolute inset-0" speed={0.2} overlay overlayOpacity={0.2} />
+              <ParallaxImage src="/images/bedroom.png" alt="Bedroom" className="absolute inset-0" speed={0.2} overlay overlayOpacity={0.2} />
               <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/20 transition-colors duration-500 z-20" />
               <div className="absolute bottom-10 left-10 z-30"><h3 className="font-headline-sm text-headline-sm text-white mb-2">Bedroom</h3><span className="text-white font-label-caps text-xs tracking-widest border-b border-white pb-1">Explore Sanctuary</span></div>
             </Link>
@@ -100,14 +100,14 @@ export default function Home() {
           <div className="flex-[0.6] flex flex-col gap-8">
             <ScrollReveal variant="slide-right" delay={0.15} className="flex-1">
               <Link to="/collection" className="group cursor-pointer relative overflow-hidden rounded-xl block h-full min-h-[230px]">
-                <ParallaxImage src="https://image.pollinations.ai/prompt/modern%20minimalist%20kitchen%20with%20ceramic%20details%20natural%20wood%20warm%20light?width=1000&height=800&nologo=true&model=flux" alt="Kitchen" className="absolute inset-0" speed={0.15} overlay overlayOpacity={0.2} />
+                <ParallaxImage src="/images/furniture.png" alt="Kitchen" className="absolute inset-0" speed={0.15} overlay overlayOpacity={0.2} />
                 <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/20 transition-colors duration-500 z-20" />
                 <div className="absolute bottom-8 left-8 z-30"><h3 className="font-headline-sm text-headline-sm text-white mb-2">Kitchen</h3><span className="text-white font-label-caps text-xs tracking-widest border-b border-white pb-1">Shop Curation</span></div>
               </Link>
             </ScrollReveal>
             <ScrollReveal variant="slide-right" delay={0.3} className="flex-1">
               <Link to="/collection" className="group cursor-pointer relative overflow-hidden rounded-xl block h-full min-h-[230px]">
-                <ParallaxImage src="https://image.pollinations.ai/prompt/cozy%20warm%20minimalist%20living%20room%20with%20linen%20sofa%20and%20ceramics?width=1000&height=800&nologo=true&model=flux" alt="Living" className="absolute inset-0" speed={0.15} overlay overlayOpacity={0.2} />
+                <ParallaxImage src="/images/furniture.png" alt="Living" className="absolute inset-0" speed={0.15} overlay overlayOpacity={0.2} />
                 <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/20 transition-colors duration-500 z-20" />
                 <div className="absolute bottom-8 left-8 z-30"><h3 className="font-headline-sm text-headline-sm text-white mb-2">Living</h3><span className="text-white font-label-caps text-xs tracking-widest border-b border-white pb-1">Browse Living</span></div>
               </Link>
