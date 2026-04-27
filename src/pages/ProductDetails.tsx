@@ -156,7 +156,7 @@ export default function ProductDetails() {
           </div>
           <ScrollReveal variant="scale-up" duration={0.9} className="order-1 md:order-2">
             <div className="aspect-square rounded-xl overflow-hidden shadow-xl shadow-stone-900/5">
-              <img alt="Artisan working" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=1000&q=80" />
+              <img alt="Artisan working" className="w-full h-full object-cover" src="https://image.pollinations.ai/prompt/artisan%20potter%20hands%20shaping%20clay%20on%20wheel%20warm%20cinematic%20lighting%20dust?width=800&height=800&nologo=true&model=flux" />
             </div>
           </ScrollReveal>
         </div>

@@ -1,5 +1,8 @@
 import type { Product } from "./types";
 
+const getAIImage = (prompt: string, width = 800, height = 800) => 
+  `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=${width}&height=${height}&nologo=true&model=flux`;
+
 export const ALL_PRODUCTS: Product[] = [
   {
     id: "1",
@@ -10,7 +13,7 @@ export const ALL_PRODUCTS: Product[] = [
     category: "Living",
     variant: "Natural Clay",
     badge: "New",
-    imageUrl: "https://images.unsplash.com/photo-1578996541604-ee9fb23c6c0e?auto=format&fit=crop&w=800&q=80",
+    imageUrl: getAIImage("minimalist handmade muted clay vase on a clean aesthetic table natural lighting neutral colors"),
     images: [],
     variants: [
       { id: "v1", name: "Natural Clay", colorHex: "#C4956A", priceModifier: 0 },
@@ -25,7 +28,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 42,
     category: "Bedroom",
     variant: "Oatmeal",
-    imageUrl: "https://images.unsplash.com/photo-1615870238543-7f919a3b68df?auto=format&fit=crop&w=800&q=80",
+    imageUrl: getAIImage("beautiful neatly folded stone washed linen bed sheets in oatmeal color bright aesthetic bedroom daylight"),
     images: [],
     variants: [
       { id: "v3", name: "Oatmeal", colorHex: "#E5D5C5", priceModifier: 0 },
@@ -40,7 +43,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 210,
     category: "Living",
     variant: "Aged Brass",
-    imageUrl: "https://images.unsplash.com/photo-1507646873111-92be0f58852e?auto=format&fit=crop&w=800&q=80",
+    imageUrl: getAIImage("sculptural modern orbital aged brass table lamp glowing warmly luxury minimalist interior"),
     images: [],
     variants: [
       { id: "v5", name: "Aged Brass", colorHex: "#B8860B", priceModifier: 0 },
@@ -55,7 +58,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 540,
     category: "Living",
     variant: "Warm Oak",
-    imageUrl: "https://images.unsplash.com/photo-1506898667547-42e22a46e125?auto=format&fit=crop&w=800&q=80",
+    imageUrl: getAIImage("minimalist warm oak lounge chair with plush cream cushions japanese scandinavian design aesthetic"),
     images: [],
     variants: [
       { id: "v7", name: "Warm Oak", colorHex: "#D2B48C", priceModifier: 0 },
@@ -70,7 +73,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 42,
     category: "Plates",
     variant: "Matte Sand Glaze",
-    imageUrl: "https://images.unsplash.com/photo-1603006905003-747ef52f1873?auto=format&fit=crop&w=800&q=80",
+    imageUrl: getAIImage("handmade ceramic dinner plate matte sand glaze organic shape minimal table setting top down"),
     images: [],
     variants: [
       { id: "v9", name: "Sand", colorHex: "#F4F1EC", priceModifier: 0 },
@@ -85,7 +88,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 78,
     category: "Bowls",
     variant: "Terracotta & Cream",
-    imageUrl: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80",
+    imageUrl: getAIImage("stack of handmade terracotta and cream ceramic cereal bowls minimalist kitchen aesthetic"),
     images: [],
     variants: [
       { id: "v11", name: "Terracotta", colorHex: "#C4956A", priceModifier: 0 },
@@ -101,7 +104,7 @@ export const ALL_PRODUCTS: Product[] = [
     category: "Serving",
     variant: "Speckled Stone",
     badge: "Limited Edition",
-    imageUrl: "https://images.unsplash.com/photo-1615671047514-6fa65e9dc32a?auto=format&fit=crop&w=800&q=80",
+    imageUrl: getAIImage("handmade ceramic water pitcher with speckled stone glaze wabi sabi aesthetic natural light"),
     images: [],
     variants: [
       { id: "v13", name: "Speckled Stone", colorHex: "#8B9DAF", priceModifier: 0 },
@@ -115,7 +118,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 34,
     category: "Drinkware",
     variant: "Charcoal Matte",
-    imageUrl: "https://images.unsplash.com/photo-1596434451000-a309995fa1b6?auto=format&fit=crop&w=800&q=80",
+    imageUrl: getAIImage("pair of matte charcoal espresso cups modern minimalist ceramics dark aesthetic"),
     images: [],
     variants: [
       { id: "v14", name: "Charcoal", colorHex: "#3C3B3A", priceModifier: 0 },
@@ -130,7 +133,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 110,
     category: "Serving",
     variant: "Sage Green Gloss",
-    imageUrl: "https://images.unsplash.com/photo-1590486803622-c249a56247c4?auto=format&fit=crop&w=800&q=80",
+    imageUrl: getAIImage("large organic shaped ceramic serving platter sage green gloss glaze natural aesthetic"),
     images: [],
     variants: [
       { id: "v16", name: "Sage Green", colorHex: "#9BAF94", priceModifier: 0 },
@@ -144,7 +147,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 38,
     category: "Drinkware",
     variant: "Oatmeal Ribbed",
-    imageUrl: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=800&q=80",
+    imageUrl: getAIImage("fluted ceramic coffee mug oatmeal ribbed finish minimalist warm lighting resting on wooden table"),
     images: [],
     variants: [
       { id: "v17", name: "Oatmeal", colorHex: "#E5D5C5", priceModifier: 0 },
@@ -160,10 +163,10 @@ export const ALL_PRODUCTS: Product[] = [
     category: "Bowls",
     variant: "Morning Mist",
     badge: "Handcrafted",
-    imageUrl: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80",
+    imageUrl: getAIImage("wide shallow handmade ceramic bowl morning mist matte glaze elegant wabi sabi aesthetic"),
     images: [
-      "https://images.unsplash.com/photo-1590486803622-c249a56247c4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=80",
+      getAIImage("close up macro detail of matte ceramic glaze texture natural lighting wabi sabi"),
+      getAIImage("artisan hands shaping clay on a pottery wheel warm cinematic light dust"),
     ],
     variants: [
       { id: "v19", name: "Morning Mist", colorHex: "#F4F1EC", priceModifier: 0 },
@@ -179,7 +182,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 124,
     category: "Bedroom",
     variant: "Oatmeal / Large",
-    imageUrl: "https://images.unsplash.com/photo-1615870238543-7f919a3b68df?auto=format&fit=crop&w=800&q=80",
+    imageUrl: getAIImage("pure linen throw blanket draped over a minimalist chair oatmeal color soft window light"),
     images: [],
     variants: [
       { id: "v22", name: "Oatmeal", colorHex: "#E5D5C5", priceModifier: 0 },
@@ -194,7 +197,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 62,
     category: "Living",
     variant: "Set of 3",
-    imageUrl: "https://images.unsplash.com/photo-1603006905003-747ef52f1873?auto=format&fit=crop&w=800&q=80",
+    imageUrl: getAIImage("three small minimalist ceramic candles cedar and moss aesthetic soft glowing light neutral background"),
     images: [],
     variants: [
       { id: "v24", name: "Cedar & Moss", colorHex: "#6B7B5E", priceModifier: 0 },
