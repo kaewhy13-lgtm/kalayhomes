@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion, useInView, type Variant } from "motion/react";
 
 type RevealVariant =
@@ -52,7 +52,15 @@ export default function ScrollReveal({
   as = "div",
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once, amount });
+  const isInView = useInView(ref, { once, amount: Math.min(amount, 0.1) });
+  const [fallbackVisible, setFallbackVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setFallbackVisible(true), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const shouldShow = isInView || fallbackVisible;
 
   const MotionComponent = motion.create(as as any);
 
@@ -60,7 +68,7 @@ export default function ScrollReveal({
     <MotionComponent
       ref={ref}
       initial={hiddenVariants[variant]}
-      animate={isInView ? visibleVariants[variant] : hiddenVariants[variant]}
+      animate={shouldShow ? visibleVariants[variant] : hiddenVariants[variant]}
       transition={{
         duration,
         delay,
@@ -90,14 +98,22 @@ export function StaggerContainer({
   amount = 0.15,
 }: StaggerContainerProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once, amount });
+  const isInView = useInView(ref, { once, amount: Math.min(amount, 0.1) });
+  const [fallbackVisible, setFallbackVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setFallbackVisible(true), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const shouldShow = isInView || fallbackVisible;
 
   return (
     <motion.div
       ref={ref}
       className={className}
       initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
+      animate={shouldShow ? "visible" : "hidden"}
       variants={{
         hidden: {},
         visible: {
@@ -166,7 +182,15 @@ export function TextReveal({
   staggerDelay = 0.04,
 }: TextRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once, amount });
+  const isInView = useInView(ref, { once, amount: Math.min(amount, 0.1) });
+  const [fallbackVisible, setFallbackVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setFallbackVisible(true), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const shouldShow = isInView || fallbackVisible;
   const words = text.split(" ");
 
   return (
@@ -174,7 +198,7 @@ export function TextReveal({
       ref={ref}
       className={`inline-flex flex-wrap ${className}`}
       initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
+      animate={shouldShow ? "visible" : "hidden"}
       variants={{
         hidden: {},
         visible: {
