@@ -17,7 +17,7 @@ export default function Cart() {
   // Empty cart
   if (!loading && items.length === 0) {
     return (
-      <main className="max-w-7xl mx-auto px-8 py-section-gap text-center">
+      <main className="max-w-7xl mx-auto px-4 md:px-8 py-section-gap text-center">
         <ScrollReveal variant="fade-up">
           <div className="py-20">
             <ShoppingBag size={64} className="mx-auto text-stone-300 mb-6" />
@@ -33,7 +33,7 @@ export default function Cart() {
   }
 
   return (
-    <main className="max-w-7xl mx-auto px-8 py-section-gap">
+    <main className="max-w-7xl mx-auto px-4 md:px-8 py-section-gap">
       <ScrollReveal variant="fade-up">
         <div className="mb-stack-lg">
           <h1 className="font-headline-lg text-headline-lg text-on-surface">

@@ -16,10 +16,10 @@ export default function Home() {
       <MountainParallax />
 
       {/* Philosophy */}
-      <section className="max-w-7xl mx-auto px-8 py-section-gap">
+      <section className="max-w-7xl mx-auto px-4 md:px-8 py-section-gap">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
           <ScrollReveal variant="slide-left" duration={0.9} className="md:col-span-8 bg-[#F3E8D9] rounded-xl p-12 flex flex-col justify-end relative overflow-hidden group">
-            <img className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" alt="artisanal ceramic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKkNfmk356EEtC2WKMuS4NFjp-6irK1epwhpSKmy-6dsJbu5u6G6HKVkj_icpR3bpl91V1rzfra1B3FIGOjhu6smOldyQrZf4qWJIjyoZMpqMTBcAlO0P3AMIzLUyGCo65azpdMa95zneq8tVuuA12whtMNG3eoQ9wbHBJW4lwAcHD4Mqp0VvBmmGPMeRXOfTH7DjCFSco4ynt09tU4nS-1GMaiiBUWcAEDccJiZOTN3nabsga2RFRp91mW1nO1xtJCpO0uUlhqAM" />
+            <img className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" alt="artisanal ceramic" src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1200&q=80" />
             <div className="relative z-10">
               <h2 className="font-headline-md text-headline-md mb-4 text-stone-900"><TextReveal text="The Artisanal Soul" delay={0.2} /></h2>
               <ScrollReveal variant="fade-up" delay={0.5}>
@@ -42,7 +42,7 @@ export default function Home() {
 
       {/* New Arrivals */}
       <section className="bg-surface-container-low py-section-gap">
-        <div className="max-w-7xl mx-auto px-8">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex justify-between items-end mb-12">
             <ScrollReveal variant="fade-up">
               <span className="font-label-caps text-label-caps text-primary mb-2 block">CURATED FOR YOU</span>
@@ -75,9 +75,9 @@ export default function Home() {
       </section>
 
       {/* Parallax Quote */}
-      <ParallaxSection src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8KT-OEPeJ1jNJWx6CWy29lpBnpD9-LFMemZR_ikAZtqH8qESDtFEitjdqipRtYto-MOKvmGprMH-t50dlUsUci3XvaWv_ga6vYWX89oeDnaxNzUvxUxdE9XZFYwsX7_6uVxpysOJZS7DmRf7dUj_wKChLe-de28rMgCMjfdIEns_G80UKC1BNwAW91TYaw39pQBowanXvaIOfeSTXxRvHwUGZbDGvHhyjvdIm4hnwBnWsFtK7eid_FUA3S9naaBNAdLtj8y9o59I" alt="serene room" height="400px" speed={0.3} className="relative">
+      <ParallaxSection src="https://images.unsplash.com/photo-1615870238543-7f919a3b68df?auto=format&fit=crop&w=2000&q=80" alt="serene room" height="400px" speed={0.3} className="relative">
         <div className="absolute inset-0 bg-stone-900/30 z-0" />
-        <div className="relative z-10 text-center px-8">
+        <div className="relative z-10 text-center px-4 md:px-8">
           <ScrollReveal variant="blur-in" duration={1}>
             <p className="font-headline-sm text-headline-sm text-white italic max-w-2xl mx-auto drop-shadow-lg">"Objects that breathe intention into the quiet corners of your home."</p>
           </ScrollReveal>
@@ -85,14 +85,14 @@ export default function Home() {
       </ParallaxSection>
 
       {/* Shop Your Sanctuary */}
-      <section className="py-section-gap max-w-7xl mx-auto px-8">
+      <section className="py-section-gap max-w-7xl mx-auto px-4 md:px-8">
         <ScrollReveal variant="fade-up" className="mb-16 text-center">
           <h2 className="font-headline-md text-headline-md text-stone-900"><TextReveal text="Shop Your Sanctuary" /></h2>
         </ScrollReveal>
         <div className="flex flex-col md:flex-row gap-8">
           <ScrollReveal variant="slide-left" duration={0.8} className="flex-1">
             <Link to="/collection" className="group cursor-pointer relative overflow-hidden rounded-xl h-[500px] block">
-              <ParallaxImage src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFy4u2N-15Z5wquUFijA0LrnZi94_-W00K4-UBcwrYMuwCXJxMkr2h7yHJ6AfJCtXMe2VyrU39CqCvCI8EnsLgUTnjW0D3gXMMpme58H1fdAi5Y6LbuSlGCWeSQTgKMnsX7wRu4CiGMK5oL4RhHkBZ4FAogT9KlLdZFER_8nuRDzhn8P2BxL6UarrJFwrw7N4PVd2cptCQyGFmnTDswM_Js2HU1_LsFr5IxDAqpjVeuBLMnvMctebwtFcKcchBG5YtncGRb1klpi4" alt="Bedroom" className="absolute inset-0" speed={0.2} overlay overlayOpacity={0.2} />
+              <ParallaxImage src="https://images.unsplash.com/photo-1615671047514-6fa65e9dc32a?auto=format&fit=crop&w=1000&q=80" alt="Bedroom" className="absolute inset-0" speed={0.2} overlay overlayOpacity={0.2} />
               <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/20 transition-colors duration-500 z-20" />
               <div className="absolute bottom-10 left-10 z-30"><h3 className="font-headline-sm text-headline-sm text-white mb-2">Bedroom</h3><span className="text-white font-label-caps text-xs tracking-widest border-b border-white pb-1">Explore Sanctuary</span></div>
             </Link>
@@ -100,14 +100,14 @@ export default function Home() {
           <div className="flex-[0.6] flex flex-col gap-8">
             <ScrollReveal variant="slide-right" delay={0.15} className="flex-1">
               <Link to="/collection" className="group cursor-pointer relative overflow-hidden rounded-xl block h-full min-h-[230px]">
-                <ParallaxImage src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXBqXCt_1V_A_3Gj86fX2Oe8x8CCsXrmtX5tY8reyovHegV-OT95DJbYufRzYCX1IHMunHBHEpQYOcoSfDK-FkCRLDPQPuQ60sn75FaS7J_Yk1PTYmSDa8_B4fcdPxL0p_rOgt8H-WQ4z1Dleeq89tmjsrOjBKvUpWPDllhRJVDb4hzaabS6tY06cr33vWkuhSFP_VmBEliHIjlVY_Wi8Q3JB2Jk6F1kcPIovb2cV80DuZ_GCfKbPCNRBdtPBsi7NV59Bs0KFmysI" alt="Kitchen" className="absolute inset-0" speed={0.15} overlay overlayOpacity={0.2} />
+                <ParallaxImage src="https://images.unsplash.com/photo-1556912173-455648c660f9?auto=format&fit=crop&w=1000&q=80" alt="Kitchen" className="absolute inset-0" speed={0.15} overlay overlayOpacity={0.2} />
                 <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/20 transition-colors duration-500 z-20" />
                 <div className="absolute bottom-8 left-8 z-30"><h3 className="font-headline-sm text-headline-sm text-white mb-2">Kitchen</h3><span className="text-white font-label-caps text-xs tracking-widest border-b border-white pb-1">Shop Curation</span></div>
               </Link>
             </ScrollReveal>
             <ScrollReveal variant="slide-right" delay={0.3} className="flex-1">
               <Link to="/collection" className="group cursor-pointer relative overflow-hidden rounded-xl block h-full min-h-[230px]">
-                <ParallaxImage src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYUpkSUTSVB6PtBn0wi9CiUAn7FSoSBfjQ4YGi4s8b6-ZYldW_4LAqAk-I3nBAkbd4d6kdJaasThmNyQnwQNHLT2u7OdkKkBdI-RIYXtLJ10n65kkPsotLHXzSFm8AlsIuFfhTCU4_QrZEPXTkQecCrZdKcvmGE9lwuT2RBQn2FhkOTSOkiQv3EM39z0P02_86ODsu1tX72hKsjJuPzY4yxKkpcRjC7ZbVXkLiMVgaXeaxsXSk5FS_V8VTt72IzKxuj1Hgi0OUlsQ" alt="Living" className="absolute inset-0" speed={0.15} overlay overlayOpacity={0.2} />
+                <ParallaxImage src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80" alt="Living" className="absolute inset-0" speed={0.15} overlay overlayOpacity={0.2} />
                 <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/20 transition-colors duration-500 z-20" />
                 <div className="absolute bottom-8 left-8 z-30"><h3 className="font-headline-sm text-headline-sm text-white mb-2">Living</h3><span className="text-white font-label-caps text-xs tracking-widest border-b border-white pb-1">Browse Living</span></div>
               </Link>
@@ -118,7 +118,7 @@ export default function Home() {
 
       {/* Newsletter */}
       <section className="py-24 bg-secondary-fixed">
-        <div className="max-w-3xl mx-auto px-8 text-center">
+        <div className="max-w-3xl mx-auto px-4 md:px-8 text-center">
           <ScrollReveal variant="fade-up"><span className="font-label-caps text-label-caps text-on-secondary-fixed-variant mb-6 block">STAY CONNECTED</span></ScrollReveal>
           <ScrollReveal variant="blur-in" duration={0.9} delay={0.15}>
             <h2 className="font-headline-md text-headline-md text-stone-900 mb-8">Join the Journal for stories of intentional living and first access to new arrivals.</h2>

@@ -69,29 +69,29 @@
   --font-serif: "Noto Serif", serif;
   --font-sans: "Manrope", sans-serif;
 
-  --text-headline-md: 32px;
+  --text-headline-md: clamp(28px, 5vw, 32px);
   --text-headline-md--line-height: 1.3;
   --text-headline-md--font-weight: 400;
 
-  --text-label-caps: 12px;
+  --text-label-caps: clamp(10px, 2vw, 12px);
   --text-label-caps--line-height: 1.2;
   --text-label-caps--letter-spacing: 0.1em;
   --text-label-caps--font-weight: 600;
 
-  --text-headline-sm: 24px;
+  --text-headline-sm: clamp(20px, 4vw, 24px);
   --text-headline-sm--line-height: 1.4;
   --text-headline-sm--font-weight: 400;
 
-  --text-headline-lg: 48px;
+  --text-headline-lg: clamp(36px, 6vw, 48px);
   --text-headline-lg--line-height: 1.2;
   --text-headline-lg--letter-spacing: -0.02em;
   --text-headline-lg--font-weight: 400;
 
-  --text-body-lg: 18px;
+  --text-body-lg: clamp(16px, 3vw, 18px);
   --text-body-lg--line-height: 1.6;
   --text-body-lg--font-weight: 400;
 
-  --text-body-md: 16px;
+  --text-body-md: clamp(14px, 2.5vw, 16px);
   --text-body-md--line-height: 1.6;
   --text-body-md--font-weight: 400;
 }

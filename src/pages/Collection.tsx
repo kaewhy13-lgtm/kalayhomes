@@ -62,7 +62,7 @@ export default function Collection() {
   }
 
   return (
-    <main className="max-w-7xl mx-auto px-8 py-20">
+    <main className="max-w-7xl mx-auto px-4 md:px-8 py-20">
       {/* Hero */}
       <section className="mb-section-gap text-center">
         <ScrollReveal variant="fade-down" duration={0.6}>

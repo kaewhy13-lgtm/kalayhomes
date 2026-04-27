@@ -30,7 +30,7 @@ export default function ProductDetails() {
 
   if (loading) {
     return (
-      <main className="max-w-7xl mx-auto px-8 py-12 md:py-20">
+      <main className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-20">
         <ProductDetailSkeleton />
       </main>
     );
@@ -38,7 +38,7 @@ export default function ProductDetails() {
 
   if (!product) {
     return (
-      <main className="max-w-7xl mx-auto px-8 py-20 text-center">
+      <main className="max-w-7xl mx-auto px-4 md:px-8 py-20 text-center">
         <h1 className="font-headline-lg text-headline-lg text-on-surface mb-4">Product Not Found</h1>
         <p className="font-body-lg text-secondary mb-8">The product you're looking for doesn't exist.</p>
         <Link to="/collection" className="bg-on-surface text-background px-10 py-4 rounded-lg font-label-caps text-label-caps uppercase hover:bg-primary transition-colors">Browse Collection</Link>
@@ -68,7 +68,7 @@ export default function ProductDetails() {
   const allImages = [product.imageUrl, ...product.images];
 
   return (
-    <main className="max-w-7xl mx-auto px-8 py-12 md:py-20">
+    <main className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-20">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
         {/* Image Gallery */}
         <StaggerContainer className="lg:col-span-7 grid grid-cols-2 gap-4" staggerDelay={0.15}>
@@ -156,7 +156,7 @@ export default function ProductDetails() {
           </div>
           <ScrollReveal variant="scale-up" duration={0.9} className="order-1 md:order-2">
             <div className="aspect-square rounded-xl overflow-hidden shadow-xl shadow-stone-900/5">
-              <img alt="Artisan working" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtCIPya078jVy2TzlpUYL-ZJSlLIPjyRc6Rz7fRv0kk0FzCPxVo0Ign0x_ZYEHyTlHrtoIvVloYSLdGys6rYSi8Xd-tamhBxZdJBGNDKRCvDRXPJPNDWJLJdn0rniCbrHe7vKY5rBIOvcYla1NPWgOVMnWX1nIK40wZfNkhCdMtJULX8tUr2cqnEc2tKgpoKXsUv1wIGsbhEn1UUSiChBYqPZjjxETQPKiUkoiB6htitKICTT-FwAPEP8M5X3CHlswGgpsRd0hiFM" />
+              <img alt="Artisan working" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=1000&q=80" />
             </div>
           </ScrollReveal>
         </div>

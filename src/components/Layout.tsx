@@ -40,7 +40,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </div>
 
       <header className="bg-background dark:bg-stone-950 docked full-width top-0 z-50 border-b border-stone-200/50 dark:border-stone-800/50 shadow-[0_4px_20px_-10px_rgba(74,50,16,0.05)] sticky">
-        <div className="flex items-center justify-between px-8 py-6 w-full max-w-7xl mx-auto">
+        <div className="flex items-center justify-between px-4 md:px-8 py-6 w-full max-w-7xl mx-auto">
           <div className="flex items-center gap-6 w-1/3">
             <button className="text-stone-500 dark:text-stone-400 hover:text-primary transition-colors duration-300 lg:hidden" onClick={() => setIsMobileMenuOpen(true)}>
               <Menu size={24} />
@@ -70,7 +70,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="flex-1">{children}</div>
 
       <footer className="full-width py-20 bg-background dark:bg-stone-950 border-t border-stone-200/50 dark:border-stone-800/50 mt-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-4 md:px-8 max-w-7xl mx-auto">
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <span className="font-serif text-xl tracking-widest text-stone-900 dark:text-stone-100 uppercase">KALAYHOMES</span>
@@ -100,7 +100,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto px-8 mt-20 pt-8 border-t border-stone-200/30 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 mt-20 pt-8 border-t border-stone-200/30 flex flex-col md:flex-row justify-between items-center gap-4">
           <span className="font-sans text-xs tracking-wider uppercase text-stone-400 text-center">© 2024 KALAYHOMES. EVERYDAY INTENTIONALITY.</span>
           <div className="flex gap-8">
             <a className="font-sans text-xs tracking-wider uppercase text-stone-500 hover:text-stone-900 transition-colors" href="#">Privacy</a>
