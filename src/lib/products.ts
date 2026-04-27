@@ -10,7 +10,7 @@ export const ALL_PRODUCTS: Product[] = [
     category: "Living",
     variant: "Natural Clay",
     badge: "New",
-    imageUrl: "/images/ceramic.png",
+    imageUrl: "/images/vase.png",
     images: [],
     variants: [
       { id: "v1", name: "Natural Clay", colorHex: "#C4956A", priceModifier: 0 },
@@ -25,7 +25,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 42,
     category: "Bedroom",
     variant: "Oatmeal",
-    imageUrl: "/images/bedroom.png",
+    imageUrl: "/images/linen.png",
     images: [],
     variants: [
       { id: "v3", name: "Oatmeal", colorHex: "#E5D5C5", priceModifier: 0 },
@@ -40,7 +40,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 210,
     category: "Living",
     variant: "Aged Brass",
-    imageUrl: "/images/furniture.png",
+    imageUrl: "/images/lamp.png",
     images: [],
     variants: [
       { id: "v5", name: "Aged Brass", colorHex: "#B8860B", priceModifier: 0 },
@@ -55,7 +55,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 540,
     category: "Living",
     variant: "Warm Oak",
-    imageUrl: "/images/furniture.png",
+    imageUrl: "/images/chair.png",
     images: [],
     variants: [
       { id: "v7", name: "Warm Oak", colorHex: "#D2B48C", priceModifier: 0 },
@@ -70,7 +70,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 42,
     category: "Plates",
     variant: "Matte Sand Glaze",
-    imageUrl: "/images/ceramic.png",
+    imageUrl: "/images/plate.png",
     images: [],
     variants: [
       { id: "v9", name: "Sand", colorHex: "#F4F1EC", priceModifier: 0 },
@@ -85,7 +85,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 78,
     category: "Bowls",
     variant: "Terracotta & Cream",
-    imageUrl: "/images/ceramic.png",
+    imageUrl: "/images/bowls.png",
     images: [],
     variants: [
       { id: "v11", name: "Terracotta", colorHex: "#C4956A", priceModifier: 0 },
@@ -101,7 +101,7 @@ export const ALL_PRODUCTS: Product[] = [
     category: "Serving",
     variant: "Speckled Stone",
     badge: "Limited Edition",
-    imageUrl: "/images/ceramic.png",
+    imageUrl: "/images/pitcher.png",
     images: [],
     variants: [
       { id: "v13", name: "Speckled Stone", colorHex: "#8B9DAF", priceModifier: 0 },
@@ -115,7 +115,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 34,
     category: "Drinkware",
     variant: "Charcoal Matte",
-    imageUrl: "/images/ceramic.png",
+    imageUrl: "/images/vase.png",
     images: [],
     variants: [
       { id: "v14", name: "Charcoal", colorHex: "#3C3B3A", priceModifier: 0 },
@@ -130,7 +130,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 110,
     category: "Serving",
     variant: "Sage Green Gloss",
-    imageUrl: "/images/ceramic.png",
+    imageUrl: "/images/platter.png",
     images: [],
     variants: [
       { id: "v16", name: "Sage Green", colorHex: "#9BAF94", priceModifier: 0 },
@@ -144,7 +144,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 38,
     category: "Drinkware",
     variant: "Oatmeal Ribbed",
-    imageUrl: "/images/ceramic.png",
+    imageUrl: "/images/bowls.png",
     images: [],
     variants: [
       { id: "v17", name: "Oatmeal", colorHex: "#E5D5C5", priceModifier: 0 },
@@ -160,10 +160,10 @@ export const ALL_PRODUCTS: Product[] = [
     category: "Bowls",
     variant: "Morning Mist",
     badge: "Handcrafted",
-    imageUrl: "/images/ceramic.png",
+    imageUrl: "/images/plate.png",
     images: [
-      "/images/ceramic.png",
-      "/images/ceramic.png",
+      "/images/bowls.png",
+      "/images/vase.png",
     ],
     variants: [
       { id: "v19", name: "Morning Mist", colorHex: "#F4F1EC", priceModifier: 0 },
@@ -179,7 +179,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 124,
     category: "Bedroom",
     variant: "Oatmeal / Large",
-    imageUrl: "/images/bedroom.png",
+    imageUrl: "/images/linen.png",
     images: [],
     variants: [
       { id: "v22", name: "Oatmeal", colorHex: "#E5D5C5", priceModifier: 0 },
@@ -194,7 +194,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 62,
     category: "Living",
     variant: "Set of 3",
-    imageUrl: "/images/ceramic.png",
+    imageUrl: "/images/pitcher.png",
     images: [],
     variants: [
       { id: "v24", name: "Cedar & Moss", colorHex: "#6B7B5E", priceModifier: 0 },
