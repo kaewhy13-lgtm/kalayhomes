@@ -1,13 +1,6 @@
 {
   "rewrites": [
-    { "source": "/images/(.*)", "destination": "/images/$1" },
-    { "source": "/icon.jpg", "destination": "/icon.jpg" },
-    { "source": "/manifest.webmanifest", "destination": "/manifest.webmanifest" },
-    { "source": "/sw.js", "destination": "/sw.js" },
-    { "source": "/workbox-(.*)", "destination": "/workbox-$1" },
-    { "source": "/registerSW.js", "destination": "/registerSW.js" },
-    { "source": "/assets/(.*)", "destination": "/assets/$1" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!assets|images|icon\\.jpg|manifest\\.webmanifest|sw\\.js|workbox-.*|registerSW\\.js).*)", "destination": "/index.html" }
   ],
   "headers": [
     {
@@ -19,7 +12,25 @@
     {
       "source": "/images/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        { "key": "Cache-Control", "value": "public, max-age=86400, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/registerSW.js",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/manifest.webmanifest",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, must-revalidate" }
       ]
     }
   ]
