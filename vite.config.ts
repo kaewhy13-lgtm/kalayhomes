@@ -19,12 +19,15 @@ export default defineConfig(({mode}) => {
           globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,jpg,jpeg,woff,woff2}'],
         },
         manifest: {
-          name: 'KalayHomes',
-          short_name: 'Kalay',
-          description: 'KalayHomes Tableware & Home Essentials',
+          name: 'KalayHomes — Handcrafted Tableware & Home Essentials',
+          short_name: 'KalayHomes',
+          description: 'Discover curated artisanal tableware, handcrafted ceramics, stone-washed linens, and home décor designed for everyday intentionality.',
           theme_color: '#FDF9F2',
           background_color: '#FDF9F2',
           display: 'standalone',
+          start_url: '/',
+          scope: '/',
+          orientation: 'portrait-primary',
           icons: [
             {
               src: '/icon.jpg',
@@ -49,8 +52,6 @@ export default defineConfig(({mode}) => {
       },
     },
     server: {
-      // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
     },
   };

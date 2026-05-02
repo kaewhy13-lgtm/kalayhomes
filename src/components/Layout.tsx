@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, Search, ShoppingBag, Share, Camera, Mail, X } from "lucide-react";
+import { Menu, Search, ShoppingBag, Share, Camera, Mail, HelpCircle, X } from "lucide-react";
 import { useCart } from "../context/CartContext";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -95,16 +95,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-2 font-sans text-xs tracking-wider uppercase">
                 <li><a className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all" href="#">Our Story</a></li>
                 <li><a className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all" href="#">Sustainability</a></li>
-                <li><a className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all" href="#">Contact</a></li>
+                <li><a className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all" href="mailto:support@kalayhomes.com">Support</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 md:px-8 mt-20 pt-8 border-t border-stone-200/30 flex flex-col md:flex-row justify-between items-center gap-4">
-          <span className="font-sans text-xs tracking-wider uppercase text-stone-400 text-center">© 2024 KALAYHOMES. EVERYDAY INTENTIONALITY.</span>
+          <span className="font-sans text-xs tracking-wider uppercase text-stone-400 text-center">© 2025 KALAYHOMES. EVERYDAY INTENTIONALITY.</span>
           <div className="flex gap-8">
-            <a className="font-sans text-xs tracking-wider uppercase text-stone-500 hover:text-stone-900 transition-colors" href="#">Privacy</a>
-            <a className="font-sans text-xs tracking-wider uppercase text-stone-500 hover:text-stone-900 transition-colors" href="#">Terms</a>
+            <Link className="font-sans text-xs tracking-wider uppercase text-stone-500 hover:text-stone-900 transition-colors" to="/privacy">Privacy</Link>
+            <Link className="font-sans text-xs tracking-wider uppercase text-stone-500 hover:text-stone-900 transition-colors" to="/terms">Terms</Link>
           </div>
         </div>
       </footer>

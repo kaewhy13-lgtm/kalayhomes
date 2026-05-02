@@ -1,20 +1,53 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# KALAYHOMES
 
-# Run and deploy your AI Studio app
+> Everyday Intentionality — Curated artisanal tableware & home essentials.
 
-This contains everything you need to run your app locally.
+## About
 
-View your app in AI Studio: https://ai.studio/apps/f11f1689-f7c9-4a5f-ba92-fad8d770c681
+KalayHomes is a modern e-commerce platform offering handcrafted ceramics, stone-washed linens, and curated home décor. Every piece is designed to bring warmth, rhythm, and intentionality to your living space.
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- **Framework:** React 19 + TypeScript
+- **Build:** Vite
+- **Styling:** Tailwind CSS v4
+- **Animations:** Motion (Framer Motion)
+- **Routing:** React Router v7
+- **Icons:** Lucide React
+- **PWA:** vite-plugin-pwa
+- **Hosting:** Vercel
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+**Prerequisites:** Node.js 18+
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+├── components/    # Reusable UI components
+├── context/       # React context (Cart)
+├── hooks/         # Custom hooks
+├── lib/           # Data, types, utilities
+└── pages/         # Route pages
+public/
+└── images/        # Product & brand images
+```
+
+## License
+
+All rights reserved © 2025 KalayHomes.
