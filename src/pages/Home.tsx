@@ -25,15 +25,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Parallax Quote */}
-      <ParallaxSection src="/images/ceramic.png" alt="serene room" height="400px" speed={0.3} className="relative">
-        <div className="absolute inset-0 bg-stone-900/30 z-0" />
+      {/* Quote */}
+      <section className="relative py-32" style={{ background: "linear-gradient(135deg, #2A1F18 0%, #4A3728 100%)" }}>
+        <div className="absolute inset-0 bg-stone-900/20 z-0" />
         <div className="relative z-10 text-center px-4 md:px-8">
           <ScrollReveal variant="blur-in" duration={1}>
             <p className="font-headline-sm text-headline-sm text-white italic max-w-2xl mx-auto drop-shadow-lg">"Objects that breathe intention into the quiet corners of your home."</p>
           </ScrollReveal>
         </div>
-      </ParallaxSection>
+      </section>
 
       {/* Newsletter */}
       <section className="py-24 bg-secondary-fixed">
