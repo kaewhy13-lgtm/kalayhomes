@@ -26,7 +26,7 @@ export default function Home() {
       </section>
 
       {/* Parallax Quote */}
-      <ParallaxSection src="/images/linen.png" alt="serene room" height="400px" speed={0.3} className="relative">
+      <ParallaxSection src="/images/ceramic.png" alt="serene room" height="400px" speed={0.3} className="relative">
         <div className="absolute inset-0 bg-stone-900/30 z-0" />
         <div className="relative z-10 text-center px-4 md:px-8">
           <ScrollReveal variant="blur-in" duration={1}>

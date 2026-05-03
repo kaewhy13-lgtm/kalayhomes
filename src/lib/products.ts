@@ -25,7 +25,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 42,
     category: "Bedroom",
     variant: "Oatmeal",
-    imageUrl: "/images/linen.png",
+    imageUrl: "/images/ceramic.png",
     images: [],
     variants: [
       { id: "v3", name: "Oatmeal", colorHex: "#E5D5C5", priceModifier: 0 },
@@ -179,7 +179,7 @@ export const ALL_PRODUCTS: Product[] = [
     price: 124,
     category: "Bedroom",
     variant: "Oatmeal / Large",
-    imageUrl: "/images/linen.png",
+    imageUrl: "/images/ceramic.png",
     images: [],
     variants: [
       { id: "v22", name: "Oatmeal", colorHex: "#E5D5C5", priceModifier: 0 },

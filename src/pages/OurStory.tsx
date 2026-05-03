@@ -63,7 +63,7 @@ export default function OurStory() {
             </ScrollReveal>
           </div>
           <ScrollReveal variant="slide-left" duration={0.9} className="relative h-[600px] rounded-xl overflow-hidden shadow-lg order-1 md:order-2">
-            <img src="/images/linen.png" alt="Timeless Design" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            <img src="/images/ceramic.png" alt="Timeless Design" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
           </ScrollReveal>
         </div>
       </section>
