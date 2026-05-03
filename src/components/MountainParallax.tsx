@@ -179,9 +179,9 @@ export default function MountainParallax({
             >
               {ctaLabel}
             </a>
-            <button className="border border-white/60 text-white px-10 py-4 font-semibold hover:bg-white/15 backdrop-blur-sm transition-all duration-300 rounded-lg">
+            <a href="/our-story" className="border border-white/60 text-white px-10 py-4 font-semibold hover:bg-white/15 backdrop-blur-sm transition-all duration-300 rounded-lg inline-block">
               {secondaryLabel}
-            </button>
+            </a>
           </div>
         </ScrollReveal>
 

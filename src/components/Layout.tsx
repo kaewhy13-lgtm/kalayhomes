@@ -32,6 +32,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="flex flex-col p-6 gap-6">
           <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="font-sans text-sm tracking-wider uppercase text-stone-900 font-semibold hover:text-[#E7A823] transition-colors">Home</Link>
           <Link to="/collection" onClick={() => setIsMobileMenuOpen(false)} className="font-sans text-sm tracking-wider uppercase text-stone-900 font-semibold hover:text-[#E7A823] transition-colors">Collection</Link>
+          <Link to="/our-story" onClick={() => setIsMobileMenuOpen(false)} className="font-sans text-sm tracking-wider uppercase text-stone-900 font-semibold hover:text-[#E7A823] transition-colors">Our Story</Link>
           <Link to="/cart" onClick={() => setIsMobileMenuOpen(false)} className="font-sans text-sm tracking-wider uppercase text-stone-900 font-semibold hover:text-[#E7A823] transition-colors flex items-center justify-between">
             Cart
             {cartCount > 0 && <span className="bg-primary-container text-[10px] px-2 py-0.5 rounded-full text-on-primary-container">{cartCount}</span>}
@@ -48,6 +49,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="hidden lg:flex gap-8">
               <Link to="/" className="font-sans text-xs tracking-wider uppercase text-stone-900 dark:text-stone-50 font-semibold hover:text-[#E7A823] transition-colors">Home</Link>
               <Link to="/collection" className="font-sans text-xs tracking-wider uppercase text-stone-500 dark:text-stone-400 font-normal hover:text-[#E7A823] transition-colors">Collection</Link>
+              <Link to="/our-story" className="font-sans text-xs tracking-wider uppercase text-stone-500 dark:text-stone-400 font-normal hover:text-[#E7A823] transition-colors">Our Story</Link>
             </div>
           </div>
           <div className="flex-1 flex justify-center w-1/3">
@@ -93,7 +95,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="space-y-4">
               <h4 className="font-label-caps text-label-caps text-stone-900 dark:text-stone-100">COMPANY</h4>
               <ul className="space-y-2 font-sans text-xs tracking-wider uppercase">
-                <li><a className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all" href="#">Our Story</a></li>
+                <li><Link to="/our-story" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all">Our Story</Link></li>
                 <li><a className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all" href="#">Sustainability</a></li>
                 <li><a className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all" href="mailto:support@kalayhomes.com">Support</a></li>
               </ul>

@@ -15,22 +15,6 @@ export default function Home() {
     <main>
       <MountainParallax />
 
-      {/* Our Story */}
-      <section className="max-w-4xl mx-auto px-4 md:px-8 py-section-gap text-center">
-        <ScrollReveal variant="fade-up" duration={0.9}>
-          <h2 className="font-headline-md text-headline-md mb-8 text-stone-900"><TextReveal text="Our Story — Kalay Homes" delay={0.2} /></h2>
-          <div className="font-body-lg text-stone-700 space-y-6 text-left md:text-center">
-            <p>At Kalay Homes, we believe a home is more than just a space—it’s a feeling. It’s the warmth of shared meals, the comfort of everyday rituals, and the small details that turn a house into something truly personal.</p>
-            <p>Our journey began with a simple idea: to make beautifully designed, high-quality tableware and home essentials accessible to modern Indian homes.</p>
-            <p>We work closely with trusted manufacturers and partners across the globe to carefully source products that combine durability, functionality, and timeless design. Every piece in our collection is thoughtfully curated and undergoes quality checks to ensure it meets our standards before it reaches your home.</p>
-            <p>We prioritize materials that are food-safe, reliable for everyday use, and crafted to last—because we believe the things you use daily should be both beautiful and dependable.</p>
-            <p>While we source globally, including from some of the world’s most advanced manufacturing hubs, every product is chosen to suit the taste, needs, and lifestyles of Indian homes.</p>
-            <p>At Kalay Homes, we are not just selling products—we are helping you create spaces that feel elegant, functional, and truly yours.</p>
-            <p className="font-semibold italic pt-4">Kalay Homes — Premium living, made accessible.</p>
-          </div>
-        </ScrollReveal>
-      </section>
-
       {/* Coming Soon */}
       <section className="bg-surface-container-low py-32">
         <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
