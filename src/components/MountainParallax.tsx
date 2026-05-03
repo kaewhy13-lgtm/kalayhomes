@@ -16,7 +16,7 @@ interface MountainParallaxProps {
 
 export default function MountainParallax({
   title = "Everyday Intentionality.",
-  subtitle = "Discover a curated collection of artisanal objects designed to bring warmth and rhythm to your sanctuary.",
+  subtitle = "Elevate your living space.",
   ctaLabel = "Shop The Collection",
   ctaLink = "/collection",
   secondaryLabel = "Our Story",
@@ -161,12 +161,6 @@ export default function MountainParallax({
         className="relative z-[10] flex flex-col items-center justify-center h-full text-center px-4 max-w-3xl mx-auto"
         style={{ y: textY, opacity: textOpacity, scale: textScale }}
       >
-        <ScrollReveal variant="fade-down" duration={0.8} delay={0.2}>
-          <span className="font-label-caps text-label-caps text-white/90 mb-6 block tracking-[0.3em] drop-shadow-lg">
-            ESTABLISHED 2024
-          </span>
-        </ScrollReveal>
-
         <h1 className="font-headline-lg text-headline-lg text-white mb-8 leading-tight drop-shadow-xl">
           <TextReveal text={title} delay={0.4} staggerDelay={0.06} />
         </h1>
