@@ -118,7 +118,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="flex items-center gap-3">
               <span className="font-serif text-xl tracking-widest text-stone-900 dark:text-stone-100 uppercase">KALAYHOMES</span>
             </div>
-            <p className="font-body-md text-on-secondary-container max-w-md">Curating objects of intentional beauty for the modern home. Handcrafted quality that bridges heritage and contemporary living.</p>
             <div className="flex items-center flex-wrap gap-4 pt-2">
               <a 
                 href="https://www.instagram.com/kalayhomes?stkn=cTlrOXUwdWU1bzFz"
@@ -136,12 +135,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
             <div className="space-y-4">
               <h4 className="font-label-caps text-label-caps text-stone-900 dark:text-stone-100">SHOP</h4>
               <ul className="space-y-2 font-sans text-xs tracking-wider uppercase">
                 <li><Link to="/collection" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all">Collection</Link></li>
                 <li><Link to="/" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all">New Arrivals</Link></li>
+              </ul>
+            </div>
+            <div className="space-y-4">
+              <h4 className="font-label-caps text-label-caps text-stone-900 dark:text-stone-100">ORDERS & SERVICES</h4>
+              <ul className="space-y-2 font-sans text-xs tracking-wider uppercase">
+                <li><Link to="/cart" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all">Track Order</Link></li>
+                <li><Link to="/terms" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all">Shipping & Delivery</Link></li>
+                <li><a className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all" href="mailto:support@kalayhomes.com">Customer Care</a></li>
               </ul>
             </div>
             <div className="space-y-4">
