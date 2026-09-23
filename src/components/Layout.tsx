@@ -24,7 +24,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         }`}
       >
         <div className="p-6 flex justify-between items-center border-b border-stone-200/50">
-          <span className="font-display text-xl tracking-[0.25em] text-stone-900 uppercase">KALAY</span>
+          <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
+            <img src="/logo.png" alt="Kalay-Homes" className="h-10 w-auto object-contain opacity-80" />
+          </Link>
           <button onClick={() => setIsMobileMenuOpen(false)} className="text-stone-500 hover:text-primary transition-colors">
             <X size={24} />
           </button>
