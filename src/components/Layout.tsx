@@ -113,8 +113,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="flex-1">{children}</div>
 
       <footer className="full-width py-20 bg-background dark:bg-stone-950 border-t border-stone-200/50 dark:border-stone-800/50 mt-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-4 md:px-8 max-w-7xl mx-auto">
-          <div className="space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 px-4 md:px-8 max-w-7xl mx-auto">
+          <div className="space-y-6 lg:col-span-4">
             <div className="flex items-center gap-3">
               <span className="font-serif text-xl tracking-widest text-stone-900 dark:text-stone-100 uppercase">KALAYHOMES</span>
             </div>
@@ -135,7 +135,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 md:gap-8 lg:col-span-8">
             <div className="space-y-4">
               <h4 className="font-label-caps text-label-caps text-stone-900 dark:text-stone-100">SHOP</h4>
               <ul className="space-y-2 font-sans text-xs tracking-wider uppercase">
@@ -144,11 +144,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </ul>
             </div>
             <div className="space-y-4">
-              <h4 className="font-label-caps text-label-caps text-stone-900 dark:text-stone-100">ORDERS & SERVICES</h4>
+              <h4 className="font-label-caps text-label-caps text-stone-900 dark:text-stone-100">ORDERS</h4>
               <ul className="space-y-2 font-sans text-xs tracking-wider uppercase">
-                <li><Link to="/cart" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all">Track Order</Link></li>
-                <li><Link to="/terms" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all">Shipping & Delivery</Link></li>
-                <li><a className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all" href="mailto:support@kalayhomes.com">Customer Care</a></li>
+                <li><Link to="/terms" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all">Returns & Exchanges</Link></li>
+                <li><Link to="/terms" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all">Shipping</Link></li>
+                <li><Link to="/terms" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all">Payment</Link></li>
+                <li><Link to="/cart" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all">Track Orders</Link></li>
+              </ul>
+            </div>
+            <div className="space-y-4">
+              <h4 className="font-label-caps text-label-caps text-stone-900 dark:text-stone-100">SERVICES</h4>
+              <ul className="space-y-2 font-sans text-xs tracking-wider uppercase">
+                <li><a className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all" href="mailto:support@kalayhomes.com">Contact Us</a></li>
+                <li><Link to="/collection" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all">Gifting</Link></li>
+                <li><Link to="/terms" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all">FAQ</Link></li>
               </ul>
             </div>
             <div className="space-y-4">
