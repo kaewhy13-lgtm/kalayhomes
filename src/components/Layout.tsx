@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, Search, ShoppingBag, Share, Instagram, Mail, HelpCircle, X } from "lucide-react";
+import { Menu, Search, ShoppingBag, Share, Instagram, Facebook, Mail, HelpCircle, X } from "lucide-react";
 import { useCart } from "../context/CartContext";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -79,13 +79,24 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-4 md:px-8 max-w-7xl mx-auto">
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="Kalay-Homes" className="h-20 w-auto object-contain opacity-80" />
+              <span className="font-serif text-xl tracking-widest text-stone-900 dark:text-stone-100 uppercase">KALAYHOMES</span>
             </div>
             <p className="font-body-md text-on-secondary-container max-w-md">Curating objects of intentional beauty for the modern home. Handcrafted quality that bridges heritage and contemporary living.</p>
-            <div className="flex gap-6 mt-4">
-              <a className="text-stone-400 hover:text-primary transition-colors" href="https://www.instagram.com/kalayhomes?stkn=cTlrOXUwdWU1bzFz" target="_blank" rel="noopener noreferrer"><Instagram size={24} /></a>
-              <a className="text-stone-400 hover:text-primary transition-colors" href="#"><Mail size={24} /></a>
-              <a className="text-stone-400 hover:text-primary transition-colors" href="#"><Share size={24} /></a>
+            <div className="flex items-center flex-wrap gap-4 pt-2">
+              <a 
+                href="https://www.instagram.com/kalayhomes?stkn=cTlrOXUwdWU1bzFz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-xs tracking-wider uppercase font-semibold px-3 py-1 rounded-full border border-stone-300 dark:border-stone-700 text-stone-700 dark:text-stone-300 hover:border-primary hover:text-primary transition-colors"
+              >
+                Follow
+              </a>
+              <div className="flex items-center gap-4">
+                <a className="text-stone-400 hover:text-primary transition-colors" href="https://www.instagram.com/kalayhomes?stkn=cTlrOXUwdWU1bzFz" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={20} /></a>
+                <a className="text-stone-400 hover:text-primary transition-colors" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook size={20} /></a>
+                <a className="text-stone-400 hover:text-primary transition-colors" href="mailto:support@kalayhomes.com" aria-label="Email"><Mail size={20} /></a>
+                <a className="text-stone-400 hover:text-primary transition-colors" href="#" aria-label="Share"><Share size={20} /></a>
+              </div>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8">
