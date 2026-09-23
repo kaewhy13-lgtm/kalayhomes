@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, Search, ShoppingBag, Share, Camera, Mail, HelpCircle, X } from "lucide-react";
+import { Menu, Search, ShoppingBag, Share, Instagram, Mail, HelpCircle, X } from "lucide-react";
 import { useCart } from "../context/CartContext";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -53,7 +53,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           <div className="flex-1 flex justify-center w-1/3">
-            <Link to="/" className="font-display text-2xl md:text-3xl tracking-[0.25em] text-stone-900 dark:text-stone-100 uppercase text-center">KALAYHOMES</Link>
+            <Link to="/" className="font-display text-2xl md:text-3xl tracking-[0.25em] text-stone-900 dark:text-stone-100 uppercase text-center opacity-70 hover:opacity-100 transition-opacity duration-300">KALAYHOMES</Link>
           </div>
           <div className="flex items-center justify-end gap-6 w-1/3">
             <button className="text-stone-500 dark:text-stone-400 hover:text-primary transition-colors duration-300 hidden md:block">
@@ -75,11 +75,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-4 md:px-8 max-w-7xl mx-auto">
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <span className="font-serif text-xl tracking-widest text-stone-900 dark:text-stone-100 uppercase">KALAYHOMES</span>
+              <span className="font-serif text-xl tracking-widest text-stone-900 dark:text-stone-100 uppercase opacity-70">KALAYHOMES</span>
             </div>
             <p className="font-body-md text-on-secondary-container max-w-md">Curating objects of intentional beauty for the modern home. Handcrafted quality that bridges heritage and contemporary living.</p>
             <div className="flex gap-6 mt-4">
-              <a className="text-stone-400 hover:text-primary transition-colors" href="#"><Camera size={24} /></a>
+              <a className="text-stone-400 hover:text-primary transition-colors" href="https://www.instagram.com/kalayhomes?stkn=cTlrOXUwdWU1bzFz" target="_blank" rel="noopener noreferrer"><Instagram size={24} /></a>
               <a className="text-stone-400 hover:text-primary transition-colors" href="#"><Mail size={24} /></a>
               <a className="text-stone-400 hover:text-primary transition-colors" href="#"><Share size={24} /></a>
             </div>
